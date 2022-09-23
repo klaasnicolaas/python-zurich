@@ -1,0 +1,231 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        8.466405,
+        47.328191,
+        8.604191,
+        47.428455
+    ],
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    8.594658,
+                    47.404414
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206880",
+            "properties": {
+                "adresse": "Ueberlandstrasse 460",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206880.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.594597,
+                    47.404434
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206881",
+            "properties": {
+                "adresse": "Ueberlandstrasse 460",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206881.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.544245,
+                    47.409697
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206914",
+            "properties": {
+                "adresse": "Querstrasse 16",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206914.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.54428,
+                    47.409706
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206915",
+            "properties": {
+                "adresse": "Querstrasse 16",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206915.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.553921,
+                    47.40894
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206916",
+            "properties": {
+                "adresse": "Greifenseestrasse 10a",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206916.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.485819,
+                    47.384643
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206917",
+            "properties": {
+                "adresse": "Zwyssigstrasse 2",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206917.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.488286,
+                    47.38997
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206918",
+            "properties": {
+                "adresse": "Bristenstrasse 17",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206918.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.557459,
+                    47.358313
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206919",
+            "properties": {
+                "adresse": "Mühlebachstrasse 137",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206919.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.554313,
+                    47.370063
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206920",
+            "properties": {
+                "adresse": "Wilfriedstrasse 5",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206920.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.501746,
+                    47.361433
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206921",
+            "properties": {
+                "adresse": "Friesenberghalde 8",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206921.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    8.501921,
+                    47.36132
+                ],
+                "type": "Point"
+            },
+            "id": "behindertenparkplaetze_dav_p.206922",
+            "properties": {
+                "adresse": "Friesenberghalde 3",
+                "art": "Nur mit Geh-Behindertenausweis",
+                "azimut": null,
+                "distanz": null,
+                "gebpflicht": "0",
+                "objectid": 206922.0,
+                "orientierung": null
+            },
+            "type": "Feature"
+        }
+    ]
+}
