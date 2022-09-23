@@ -13,7 +13,6 @@
 [![Issues][issues-shield]][issues-url]
 [![GitHub Last Commit][last-commit-shield]][commits-url]
 
-[![Code Quality][code-quality-shield]][code-quality]
 [![Maintainability][maintainability-shield]][maintainability-url]
 [![Code Coverage][codecov-shield]][codecov-url]
 
@@ -165,11 +164,9 @@ SOFTWARE.
 <!-- MARKDOWN LINKS & IMAGES -->
 [build-shield]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/tests.yaml/badge.svg
 [build-url]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/tests.yaml
-[code-quality-shield]: https://img.shields.io/lgtm/grade/python/g/klaasnicolaas/python-zurich.svg?logo=lgtm&logoWidth=18
-[code-quality]: https://lgtm.com/projects/g/klaasnicolaas/python-zurich/context:python
 [commits-shield]: https://img.shields.io/github/commit-activity/y/klaasnicolaas/python-zurich.svg
 [commits-url]: https://github.com/klaasnicolaas/python-zurich/commits/main
-[codecov-shield]: https://codecov.io/gh/klaasnicolaas/python-zurich/branch/main/graph/badge.svg?token=qf9A9Hlk4I
+[codecov-shield]: https://codecov.io/gh/klaasnicolaas/python-zurich/branch/main/graph/badge.svg?token=CLytQU0E0f
 [codecov-url]: https://codecov.io/gh/klaasnicolaas/python-zurich
 [forks-shield]: https://img.shields.io/github/forks/klaasnicolaas/python-zurich.svg
 [forks-url]: https://github.com/klaasnicolaas/python-zurich/network/members
@@ -178,7 +175,7 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/klaasnicolaas/python-zurich.svg
 [last-commit-shield]: https://img.shields.io/github/last-commit/klaasnicolaas/python-zurich.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
-[maintainability-shield]: https://api.codeclimate.com/v1/badges/b978435e9849ca199fc7/maintainability
+[maintainability-shield]: https://api.codeclimate.com/v1/badges/b4c705c4b91ea931d411/maintainability
 [maintainability-url]: https://codeclimate.com/github/klaasnicolaas/python-zurich/maintainability
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [pypi]: https://pypi.org/project/zurich/
