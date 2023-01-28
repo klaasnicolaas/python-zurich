@@ -137,7 +137,7 @@ poetry run pytest
 
 MIT License
 
-Copyright (c) 2022 Klaas Schoute
+Copyright (c) 2022-2023 Klaas Schoute
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -174,7 +174,7 @@ SOFTWARE.
 [issues-url]: https://github.com/klaasnicolaas/python-zurich/issues
 [license-shield]: https://img.shields.io/github/license/klaasnicolaas/python-zurich.svg
 [last-commit-shield]: https://img.shields.io/github/last-commit/klaasnicolaas/python-zurich.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [maintainability-shield]: https://api.codeclimate.com/v1/badges/b4c705c4b91ea931d411/maintainability
 [maintainability-url]: https://codeclimate.com/github/klaasnicolaas/python-zurich/maintainability
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
