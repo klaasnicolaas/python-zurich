@@ -1,4 +1,5 @@
-## Python - ODP Zurich Client
+<!-- Banner -->
+![alt Banner of the odp Zurich package](https://raw.githubusercontent.com/klaasnicolaas/python-zurich/main/assets/header_zurich-min.png)
 
 <!-- PROJECT SHIELDS -->
 [![GitHub Release][releases-shield]][releases]
