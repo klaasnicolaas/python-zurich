@@ -8,16 +8,17 @@
 [![License][license-shield]](LICENSE)
 
 [![GitHub Activity][commits-shield]][commits-url]
-[![Forks][forks-shield]][forks-url]
+[![PyPi Downloads][downloads-shield]][downloads-url]
+[![GitHub Last Commit][last-commit-shield]][commits-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![GitHub Last Commit][last-commit-shield]][commits-url]
+
+[![Code Quality][code-quality-shield]][code-quality]
+[![Build Status][build-shield]][build-url]
+[![Typing Status][typing-shield]][typing-url]
 
 [![Maintainability][maintainability-shield]][maintainability-url]
 [![Code Coverage][codecov-shield]][codecov-url]
-
-[![Build Status][build-shield]][build-url]
-[![Typing Status][typing-shield]][typing-url]
 
 Asynchronous Python client for the open datasets of Zurich (Switzerland).
 
@@ -164,12 +165,14 @@ SOFTWARE.
 <!-- MARKDOWN LINKS & IMAGES -->
 [build-shield]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/tests.yaml/badge.svg
 [build-url]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/tests.yaml
+[code-quality-shield]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/codeql.yaml/badge.svg
+[code-quality]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/codeql.yaml
 [commits-shield]: https://img.shields.io/github/commit-activity/y/klaasnicolaas/python-zurich.svg
 [commits-url]: https://github.com/klaasnicolaas/python-zurich/commits/main
 [codecov-shield]: https://codecov.io/gh/klaasnicolaas/python-zurich/branch/main/graph/badge.svg?token=CLytQU0E0f
 [codecov-url]: https://codecov.io/gh/klaasnicolaas/python-zurich
-[forks-shield]: https://img.shields.io/github/forks/klaasnicolaas/python-zurich.svg
-[forks-url]: https://github.com/klaasnicolaas/python-zurich/network/members
+[downloads-shield]: https://img.shields.io/pypi/dm/zurich
+[downloads-url]: https://pypistats.org/packages/zurich
 [issues-shield]: https://img.shields.io/github/issues/klaasnicolaas/python-zurich.svg
 [issues-url]: https://github.com/klaasnicolaas/python-zurich/issues
 [license-shield]: https://img.shields.io/github/license/klaasnicolaas/python-zurich.svg
