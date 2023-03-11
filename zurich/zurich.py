@@ -5,11 +5,11 @@ import asyncio
 import socket
 from dataclasses import dataclass
 from importlib import metadata
-from typing import Any
+from typing import Any, cast
 
-import aiohttp
 import async_timeout
-from aiohttp import hdrs
+from aiohttp import ClientError, ClientSession
+from aiohttp.hdrs import METH_GET
 from yarl import URL
 
 from .exceptions import ODPZurichConnectionError, ODPZurichError
@@ -21,7 +21,7 @@ class ODPZurich:
     """Main class for handling data fetchting from Open Data Platform of Zurich."""
 
     request_timeout: float = 10.0
-    session: aiohttp.client.ClientSession | None = None
+    session: ClientSession | None = None
 
     _close_session: bool = False
 
@@ -29,21 +29,24 @@ class ODPZurich:
         self,
         uri: str,
         *,
-        method: str = hdrs.METH_GET,
+        method: str = METH_GET,
         params: dict[str, Any] | None = None,
     ) -> Any:
         """Handle a request to the Open Data Platform API of Zurich.
 
         Args:
+        ----
             uri: Request URI, without '/', for example, 'status'
             method: HTTP method to use, for example, 'GET'
             params: Extra options to improve or limit the response.
 
         Returns:
+        -------
             A Python dictionary (text) with the response from
             the Open Data Platform API of Zurich.
 
         Raises:
+        ------
             ODPZurichConnectionError: Timeout occurred while
                 connecting to the Open Data Platform API.
             ODPZurichError: If the data is not valid.
@@ -61,7 +64,7 @@ class ODPZurich:
         }
 
         if self.session is None:
-            self.session = aiohttp.ClientSession()
+            self.session = ClientSession()
             self._close_session = True
 
         try:
@@ -75,28 +78,32 @@ class ODPZurich:
                 )
                 response.raise_for_status()
         except asyncio.TimeoutError as exception:
+            msg = "Timeout occurred while connecting to the Open Data Platform API."
             raise ODPZurichConnectionError(
-                "Timeout occurred while connecting to the Open Data Platform API."
+                msg,
             ) from exception
-        except (aiohttp.ClientError, socket.gaierror) as exception:
+        except (ClientError, socket.gaierror) as exception:
+            mag = "Error occurred while communicating with Open Data Platform API."
             raise ODPZurichConnectionError(
-                "Error occurred while communicating with Open Data Platform API."
+                mag,
             ) from exception
 
         content_type = response.headers.get("Content-Type", "")
         if "application/vnd.geo+json" not in content_type:
             text = await response.text()
+            msg = "Unexpected content type response from the Open Data Platform API"
             raise ODPZurichError(
-                "Unexpected content type response from the Open Data Platform API",
+                msg,
                 {"Content-Type": content_type, "Response": text},
             )
 
-        return await response.json()
+        return cast(dict[str, Any], await response.json())
 
     async def disabled_parkings(self) -> list[DisabledParking]:
         """Get list of disabled parking.
 
-        Returns:
+        Returns
+        -------
             A list of DisabledParking objects.
         """
         results: list[DisabledParking] = []
@@ -122,7 +129,8 @@ class ODPZurich:
     async def __aenter__(self) -> ODPZurich:
         """Async enter.
 
-        Returns:
+        Returns
+        -------
             The Open Data Platform Zurich object.
         """
         return self
@@ -131,6 +139,7 @@ class ODPZurich:
         """Async exit.
 
         Args:
+        ----
             _exc_info: Exec type.
         """
         await self.close()
