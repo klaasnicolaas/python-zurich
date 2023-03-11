@@ -16,16 +16,17 @@ class DisabledParking:
     latitude: float
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> DisabledParking:
+    def from_dict(cls: type[DisabledParking], data: dict[str, Any]) -> DisabledParking:
         """Return a DisabledParking object from a dictionary.
 
         Args:
+        ----
             data: The data from the API.
 
         Returns:
+        -------
             A DisabledParking object.
         """
-
         attr = data["properties"]
         geo = data["geometry"]["coordinates"]
         return cls(
