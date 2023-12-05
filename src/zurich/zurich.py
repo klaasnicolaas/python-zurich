@@ -5,9 +5,8 @@ import asyncio
 import socket
 from dataclasses import dataclass
 from importlib import metadata
-from typing import TYPE_CHECKING, Any, cast
+from typing import Any, Self, cast
 
-import async_timeout
 from aiohttp import ClientError, ClientSession
 from aiohttp.hdrs import METH_GET
 from yarl import URL
@@ -15,13 +14,10 @@ from yarl import URL
 from .exceptions import ODPZurichConnectionError, ODPZurichError
 from .models import DisabledParking
 
-if TYPE_CHECKING:
-    from typing_extensions import Self
-
 
 @dataclass
 class ODPZurich:
-    """Main class for handling data fetchting from Open Data Platform of Zurich."""
+    """Main class for handling data fetching from Open Data Platform of Zurich."""
 
     request_timeout: float = 10.0
     session: ClientSession | None = None
@@ -71,7 +67,7 @@ class ODPZurich:
             self._close_session = True
 
         try:
-            async with async_timeout.timeout(self.request_timeout):
+            async with asyncio.timeout(self.request_timeout):
                 response = await self.session.request(
                     method,
                     url,
