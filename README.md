@@ -186,7 +186,7 @@ SOFTWARE.
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [maintainability-shield]: https://api.codeclimate.com/v1/badges/b4c705c4b91ea931d411/maintainability
 [maintainability-url]: https://codeclimate.com/github/klaasnicolaas/python-zurich/maintainability
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [pypi]: https://pypi.org/project/zurich/
 [python-versions-shield]: https://img.shields.io/pypi/pyversions/zurich
 [typing-shield]: https://github.com/klaasnicolaas/python-zurich/actions/workflows/typing.yaml/badge.svg
