@@ -49,6 +49,7 @@ class ODPZurich:
             ODPZurichConnectionError: Timeout occurred while
                 connecting to the Open Data Platform API.
             ODPZurichError: If the data is not valid.
+
         """
         version = metadata.version(__package__)
         url = URL.build(
@@ -104,6 +105,7 @@ class ODPZurich:
         Returns
         -------
             A list of DisabledParking objects.
+
         """
         locations = await self._request(
             "Behindertenparkplaetze",
@@ -127,6 +129,7 @@ class ODPZurich:
         Returns
         -------
             The Open Data Platform Zurich object.
+
         """
         return self
 
@@ -136,5 +139,6 @@ class ODPZurich:
         Args:
         ----
             _exc_info: Exec type.
+
         """
         await self.close()
