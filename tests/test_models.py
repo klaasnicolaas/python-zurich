@@ -2,15 +2,19 @@
 
 from __future__ import annotations
 
-from aiohttp import ClientSession
-from aresponses import ResponsesMockServer
+from typing import TYPE_CHECKING
 
-from zurich import DisabledParking, ODPZurich
+from aresponses import ResponsesMockServer
 
 from . import load_fixtures
 
+if TYPE_CHECKING:
+    from zurich import DisabledParking, ODPZurich
 
-async def test_disabled_parkings(aresponses: ResponsesMockServer) -> None:
+
+async def test_disabled_parkings(
+    aresponses: ResponsesMockServer, odp_zurich_client: ODPZurich
+) -> None:
     """Test disabled parking spaces function."""
     aresponses.add(
         "www.ogd.stadt-zuerich.ch",
@@ -22,13 +26,11 @@ async def test_disabled_parkings(aresponses: ResponsesMockServer) -> None:
             text=load_fixtures("disabled_parkings.json"),
         ),
     )
-    async with ClientSession() as session:
-        client = ODPZurich(session=session)
-        spaces: list[DisabledParking] = await client.disabled_parkings()
-        assert spaces is not None
-        for item in spaces:
-            assert item.spot_id is not None
-            assert item.longitude is not None
-            assert item.latitude is not None
-            assert isinstance(item.longitude, float)
-            assert isinstance(item.latitude, float)
+    spaces: list[DisabledParking] = await odp_zurich_client.disabled_parkings()
+    assert spaces is not None
+    for item in spaces:
+        assert item.spot_id is not None
+        assert item.longitude is not None
+        assert item.latitude is not None
+        assert isinstance(item.longitude, float)
+        assert isinstance(item.latitude, float)
