@@ -15,6 +15,8 @@ from yarl import URL
 from .exceptions import ODPZurichConnectionError, ODPZurichError
 from .models import DisabledParking
 
+VERSION = metadata.version(__package__)
+
 
 @dataclass
 class ODPZurich:
@@ -52,7 +54,6 @@ class ODPZurich:
             ODPZurichError: If the data is not valid.
 
         """
-        version = metadata.version(__package__)
         url = URL.build(
             scheme="https",
             host="www.ogd.stadt-zuerich.ch",
@@ -61,7 +62,7 @@ class ODPZurich:
 
         headers = {
             "Accept": "application/vnd.geo+json",
-            "User-Agent": f"PythonODPZurich/{version}",
+            "User-Agent": f"PythonODPZurich/{VERSION}",
         }
 
         if self.session is None:
