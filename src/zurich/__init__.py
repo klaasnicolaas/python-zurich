@@ -5,8 +5,8 @@ from .models import DisabledParking
 from .zurich import ODPZurich
 
 __all__ = [
+    "DisabledParking",
     "ODPZurich",
     "ODPZurichConnectionError",
     "ODPZurichError",
-    "DisabledParking",
 ]
