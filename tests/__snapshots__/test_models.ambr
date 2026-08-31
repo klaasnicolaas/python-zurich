@@ -1,16 +1,71 @@
 # serializer version: 1
 # name: test_disabled_parkings
   list([
-    DisabledParking(spot_id=206880, address='Ueberlandstrasse 460', longitude=8.594658, latitude=47.404414),
-    DisabledParking(spot_id=206881, address='Ueberlandstrasse 460', longitude=8.594597, latitude=47.404434),
-    DisabledParking(spot_id=206914, address='Querstrasse 16', longitude=8.544245, latitude=47.409697),
-    DisabledParking(spot_id=206915, address='Querstrasse 16', longitude=8.54428, latitude=47.409706),
-    DisabledParking(spot_id=206916, address='Greifenseestrasse 10a', longitude=8.553921, latitude=47.40894),
-    DisabledParking(spot_id=206917, address='Zwyssigstrasse 2', longitude=8.485819, latitude=47.384643),
-    DisabledParking(spot_id=206918, address='Bristenstrasse 17', longitude=8.488286, latitude=47.38997),
-    DisabledParking(spot_id=206919, address='Mühlebachstrasse 137', longitude=8.557459, latitude=47.358313),
-    DisabledParking(spot_id=206920, address='Wilfriedstrasse 5', longitude=8.554313, latitude=47.370063),
-    DisabledParking(spot_id=206921, address='Friesenberghalde 8', longitude=8.501746, latitude=47.361433),
-    DisabledParking(spot_id=206922, address='Friesenberghalde 3', longitude=8.501921, latitude=47.36132),
+    DisabledParking(
+      address='Ueberlandstrasse 460',
+      latitude=47.404414,
+      longitude=8.594658,
+      spot_id=206880,
+    ),
+    DisabledParking(
+      address='Ueberlandstrasse 460',
+      latitude=47.404434,
+      longitude=8.594597,
+      spot_id=206881,
+    ),
+    DisabledParking(
+      address='Querstrasse 16',
+      latitude=47.409697,
+      longitude=8.544245,
+      spot_id=206914,
+    ),
+    DisabledParking(
+      address='Querstrasse 16',
+      latitude=47.409706,
+      longitude=8.54428,
+      spot_id=206915,
+    ),
+    DisabledParking(
+      address='Greifenseestrasse 10a',
+      latitude=47.40894,
+      longitude=8.553921,
+      spot_id=206916,
+    ),
+    DisabledParking(
+      address='Zwyssigstrasse 2',
+      latitude=47.384643,
+      longitude=8.485819,
+      spot_id=206917,
+    ),
+    DisabledParking(
+      address='Bristenstrasse 17',
+      latitude=47.38997,
+      longitude=8.488286,
+      spot_id=206918,
+    ),
+    DisabledParking(
+      address='Mühlebachstrasse 137',
+      latitude=47.358313,
+      longitude=8.557459,
+      spot_id=206919,
+    ),
+    DisabledParking(
+      address='Wilfriedstrasse 5',
+      latitude=47.370063,
+      longitude=8.554313,
+      spot_id=206920,
+    ),
+    DisabledParking(
+      address='Friesenberghalde 8',
+      latitude=47.361433,
+      longitude=8.501746,
+      spot_id=206921,
+    ),
+    DisabledParking(
+      address='Friesenberghalde 3',
+      latitude=47.36132,
+      longitude=8.501921,
+      spot_id=206922,
+    ),
   ])
 # ---
