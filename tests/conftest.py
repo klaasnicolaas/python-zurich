@@ -9,7 +9,7 @@ from zurich import ODPZurich
 
 
 @pytest.fixture(name="odp_zurich_client")
-async def client() -> AsyncGenerator[ODPZurich, None]:
+async def client() -> AsyncGenerator[ODPZurich]:
     """Return an ODP Zurich client."""
     async with (
         ClientSession() as session,
